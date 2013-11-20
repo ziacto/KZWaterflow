@@ -1,3 +1,7 @@
-KZWaterflow
+HZWaterflow
 ---
-利用[PSCollectionView](https://github.com/ptshih/PSCollectionView) 和 [SlimeRefresh](https://github.com/dbsGen/SlimeRefresh) 来写的一个瀑布流上下拉刷新的demo
+I wrote a demo use [PSCollectionView](https://github.com/ptshih/PSCollectionView) and [SlimeRefresh](https://github.com/dbsGen/SlimeRefresh).
+
+iOS5+ support!
+
+It works for me. Enjoy :)

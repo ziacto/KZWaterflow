@@ -118,7 +118,7 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [arrayOne removeAllObjects];
         arrayOne = [[NSMutableArray alloc]init];
-        for (NSInteger i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             [arrayOne addObject:[NSString stringWithFormat:@"%d",i]];
         }
         /*
@@ -141,7 +141,7 @@
 - (void)loadMOreData{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         //        sleep(3);
-        for (NSInteger i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             [arrayOne addObject:[NSString stringWithFormat:@"%d",i]];
         }
         /*
@@ -173,7 +173,7 @@
 }
 
 - (void)collectionView:(PSCollectionView *)collectionView didSelectCell:(PSCollectionViewCell *)cell atIndex:(NSInteger)index{
-    NSLog(@"you select cell index:%d",index);
+    NSLog(@"you select cell index:%ld",(long)index);
 }
 
 - (NSInteger)numberOfRowsInCollectionView:(PSCollectionView *)collectionView {
@@ -215,6 +215,7 @@
     }
     return 0;
 }
+
 
 #pragma mark - Button method
 - (void)switchMouth{
